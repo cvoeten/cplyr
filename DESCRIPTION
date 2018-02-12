@@ -1,0 +1,10 @@
+Package: cplyr
+Title: Fixing Dependency Grievances When Loading dplyr
+Version: 1.0
+Authors@R: person("Cesko", "Voeten", email = "c.c.voeten@hum.leidenuniv.nl", role = c("aut", "cre"))
+Description: dplyr does not correctly load magrittr, and will cause problems if plyr is loaded after it. This package works around these problems by loading plyr, magrittr, and dplyr, in the correct order.
+Depends: magrittr, plyr, dplyr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
